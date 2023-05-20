@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+#certificates{
+  background-color: #160F29;
+}
+.certi-card{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 3rem;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.certificate{
+  width: 500px;
+  background-color: #F3DFC1;
+  border-radius: 2rem;
+  padding: 1rem;
+  transition-duration: 250ms;
+}
+
+.certificate:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+  transition-duration: 250ms;
+}
