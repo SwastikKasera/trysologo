@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/LogoutPopup.css">
+    <link rel="stylesheet" href="./styles/sidebar.css">
+    <link rel="stylesheet" href="./styles/responsivesidebar.css">
+    <link rel="stylesheet" href="./styles/CreatePlan.css">  
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+</head>
+<body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- aos -->
+    <section>
+        <div class="sidebar" data-aos="fade-right" data-aos-duration="1000">
+            <div class="dashboard-logo">
+                <h2><a href="index.html">SoloGo</a></h2>
+                <hr>
+            </div>
+            <div class="dashboard-sidebar">
+                <div class="text-with-icon">
+                    <a href="Dashboard.html"><img src="./icons/dashboard.svg" alt=""></a>
+                    <a href="Dashboard.html">
+                        <p>Dashboard</p>
+                    </a>
+                </div>
+                <div class="text-with-icon">
+                    <a href="Plan.html"><div class="dashboard-highlight">
+                        <img src="./icons/plan.svg" alt="">
+                        <p>Plans</p>
+                    </div></a>
+                </div>
+                <div class="text-with-icon">
+                    <a href="Expense.html"><img src="./icons/sheet.svg" alt=""></a>
+                    <p><a href="Expense.html">Expenses</a></p>
+                </div>
+                <div class="text-with-icon">
+                    <a href="Rewards.html"><img src="./icons/sparkle.svg" alt=""></a>
+                    <p><a href="Rewards.html">Rewards</a></p>
+                </div>
+                <div class="text-with-icon">
+                    <a href="booking.html"><img src="./icons/hotel.svg" alt=""></a>
+                    <p><a href="booking.html">Bookings</a></p>
+                </div>
+            </div>
+            <div class="dashboard-logout">
+                <div class="text-with-icon">
+                    <a href="#" id="logoutLinkimg"><img src="./icons/log-out.svg" alt=""></a>
+                    <p><a href="#" id="logoutLink">Log Out</a></p>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <section>
+        <div class="dashboard-search" data-aos="fade-down" data-aos-duration="1000">
+            <form action="">
+                <img src="./icons/search.svg" alt="">
+                <input type="search" name="" placeholder="Search" id="mainsearch">
+            </form>
+            <div class="search-right">
+                <div class="dashboard-noti">
+                    <img src="./icons/bell.svg" alt="">
+                </div>
+                <a href="profile.html"><div class="dashboard-profile"></div></a>
+            </div>
+        </div>
+    </section>
+    <section class="create-plan-form">
+        <div class="form">
+            <form action="">
+                <h2>Create a Plan</h2>
+                <div class="form-text">
+                    <div class="first-col">
+                        <div class="start">
+                            <label for="strt">Start From</label>
+                            <input type="text" id="strt">
+                        </div>
+                        <div class="interest">
+                            <label for="inter">Your Interests</label>
+                            <input type="text" id="inter">
+                        </div>
+                        <div class="start-date">
+                            <label for="srt">Starting Date</label>
+                            <input type="date" id="srt">
+                        </div>
+                        <div class="min-budget">
+                            <label for="miniBudget">Minimum Budget</label>
+                            <input type="tel" id="miniBudget">
+                        </div>
+                    </div>
+                    
+                    <div class="second-col">
+                        <div class="final">
+                            <label for="fnl">Final Destination</label>
+                            <input type="text" id="fnl">
+                        </div>
+                        <div class="duration">
+                            <label for="dur">Duration of Trip</label>
+                            <select name="select" id="dur">
+                                <!-- <option value="sel">--select--</option> -->
+                                <option value="" selected disabled >--Select--</option>
+                                <option value="1">1 Days</option>
+                                <option value="2">2 Days</option>
+                                <option value="3">3 Days</option>
+                                <option value="4">4 Days</option>
+                                <option value="5">5 Days</option>
+                                <option value="6">6 Days</option>
+                                <option value="7">7 Days</option>
+                                <option value="8">8 Days</option>
+                                <option value="9">9 Days</option>
+                                <option value="10">10 Days</option>
+                            </select>
+                        </div>
+                        <div class="return-date">
+                            <label for="rtn">Returning Date</label>
+                            <input type="date" id="rtn">
+                        </div>
+                        <div class="max-budget">
+                            <label for="maxBudget">Maximum Budget</label>
+                            <input type="tel" id="maxBudget">
+                        </div>
+                    </div>
+                    <div class="third-col">
+                        <label for="add-msg">Additional Message</label>
+                        <textarea name="" id="add-msg" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+            </form>
+            <div class="condition">
+                <div class="check">
+                    <input type="checkbox" id="chck">
+                    <label for="chck">I agree that the plan generated may have some issue, I hereby taking the responsibility of it.</label>
+                </div>
+                <a href="Plan.html"><button>Make My Plan</button></a>
+            </div>
+        </div>  
+    </section>
+    <div class="modal" id="logoutModal">
+        <div class="modal-content">
+          <p>Are you sure you want to logout?</p>
+          <div class="modal-buttons">
+            <button id="logoutButton">Logout</button>
+            <button id="cancelButton">Cancel</button>
+          </div>
+        </div>
+      </div>
+      <script src="./script/LogoutPopup.js"></script>
+</body>
+</html>

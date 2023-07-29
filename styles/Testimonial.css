@@ -1,0 +1,19 @@
+/* Existing styles */
+
+body, p {
+    margin: 0;
+    padding: 0;
+}
+
+.testimonial {
+    padding-bottom: 2rem;
+}
+
+.testimonial-heading{
+    font-size: 64px;
+    font-family: Literata;
+    margin-top: 2rem;
+    text-align: center;
+    color: #023047;
+    font-weight: 500;
+}
